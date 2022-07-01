@@ -15,8 +15,11 @@ Internet Connection<br>
 
 ## Getting Started
 Apply for an API Key and System ID - Submit an application here: https://www.broadcastify.com/apply/calls<br>
+
 Install VOX Recorder - Downloaded https://proscan.org/VOX_Recorder_0_5.zip then open the .zip file<br>
+
 Click the exe setup file and follow the prompts Choose a folder for the install<br>
+
 
 Audio Setup
 Configuring VOX Recorder
