@@ -1,4 +1,5 @@
 # VOX Recorder
+Under Construction<br>
 VOX Recorder is an application specifically designed for the Broadcastify Calls platform. Connect a receiver tuned to a specific conventional frequency.
 The recorder starts when the audio level goes above the VOX Threshold. The recorder stops when the audio goes back below the VOX threshold (after 2 seconds of no audio).
 
@@ -7,25 +8,21 @@ The recorded audio is converted to MP3 then ID3v2 metadata is inserted then fina
 ![Screenshot](vox_recorder.png)
 
 ## System Requirements
-Operating System - Windows 7 SP1 or above. VOX Recorder targets the Microsoft .NET Framework 4.8
-
-Audio input device - Sound card or USB audio adapter
-
-Internet Connection
+Operating System - Windows 7 SP1 and above. VOX Recorder targets the Microsoft .NET Framework 4.8<br>
+Audio input device - Sound card or USB audio adapter<br>
+Internet Connection<br>
 
 ## Getting Started
-Apply for an API Key and System ID - Submit an application here: https://www.broadcastify.com/apply/calls
-Install VOX Recorder - Downloaded [ZIP Download](https://proscan.org/VOX_Recorder_0_5.zip) then open the .zip file
-Click the exe setup file and follow the prompts
-Choose a folder for the install
+Apply for an API Key and System ID - Submit an application here: https://www.broadcastify.com/apply/calls<br>
+Install VOX Recorder - Downloaded https://proscan.org/VOX_Recorder_0_5.zip then open the .zip file<br>
+Click the exe setup file and follow the prompts Choose a folder for the install<br>
 
 Audio Setup
 Configuring VOX Recorder
 Start the Recorder
 
 Notes
-There is never a need to uninstall VOX Recorder if another version of VOX Recorder is installed prior to installing the new version.
-The existing configuration and logging files will be retained after installation provided the new version is installed in the same folder.
+There is never a need to uninstall VOX Recorder if another version of VOX Recorder is installed prior to installing the new version.  The existing configuration and logging files will be retained after installation provided the new version is installed in the same folder.
 
 ## Audio Setup
 For reference, see the article: https://wiki.radioreference.com/index.php/Connecting_Radios_to_Soundcards
@@ -47,13 +44,13 @@ The audio format sent to the Broadcastify Calls platform and the recordings save
 
 ## Configuring VOX Recorder
 
-API Key - Assigned by the Broadcastify Calls administrator.
-System ID - Assigned by the Broadcastify Calls administrator.
-System Name - This box is read only and is linked to the API Key and System ID.
-Slot ID - Set to 1 when running a single instance of VOX Recorder. If running multiple instances using the same System ID and API Key then each conventional frequency is assigned a Slot ID starting with 1.
-Conv. Frequency - Input the frequency that the receiver is tuned to. It needs to be part of the same system.
+API Key - Assigned by the Broadcastify Calls administrator.<br>
+System ID - Assigned by the Broadcastify Calls administrator.<br>
+System Name - This box is read only and is linked to the API Key and System ID.<br>
+Slot ID - Set to 1 when running a single instance of VOX Recorder. If running multiple instances using the same System ID and API Key then each conventional frequency is assigned a Slot ID starting with 1.<br>
+Conv. Frequency - Input the frequency that the receiver is tuned to. It needs to be part of the same system.<br>
 
-The checkboxes options should be self-explanatory
+The checkboxes options should be self-explanatory<br>
 
 ## Operation
 After the audio has been setup and good audio levels and the VOX Threshold is set then click the "Start Recorder" button. 
@@ -82,19 +79,21 @@ The Logging tab grid will show all errors, e.g., duplicate calls, no API key spe
 ## Time Sync
 At 10 minute intervals, TimeSync will retrieve the actual time from a time server and compare it with the computer time. The result is an offset variable that is used to calculate the recording's actual start time. 
 
+## What's New
+
 ## Frequently Asked Questions
 
-Q: Can I run multiple copies of VOX Recorder on one computer? 
-A: Yes.  Many instances of VOX Recorder can run on the same computer.  1) Copy the contents of an existing folder to a new folder.  2) Run VOX Recorder in the new folder then change the options specific to that instance.
+Q: Can I run multiple copies of VOX Recorder on one computer?<br>
+A: Yes.  Many instances of VOX Recorder can run on the same computer.  1) Copy the contents of an existing folder to a new folder.  2) Run VOX Recorder in the new folder then change the options specific to that instance.<br>
 
-Q: How can I stream multiple receivers at the same time?
-A: By running multiple instances of VOX Recorder.
+Q: How can I stream multiple receivers at the same time?<br>
+A: By running multiple instances of VOX Recorder.<br>
 
-Q: How can VOX Recorder automatically start sending calls after the computer reboots?
-A: Add a VOX Recorder shortcut to the Windows Startup folder.  Ensure the option 'Start Recorder When Program Loads' is checked.
+Q: How can VOX Recorder automatically start sending calls after the computer reboots?<br>
+A: Add a VOX Recorder shortcut to the Windows Startup folder.  Ensure the option 'Start Recorder When Program Loads' is checked.<br>
 
-Q: Should I run VOX Recorder as administrator?'''
-A: It's recommended that VOX Recorder is not elevated to administrator.
+Q: Should I run VOX Recorder as administrator?<br>
+A: It's recommended that VOX Recorder is not elevated to administrator.<br>
 
 <!--
 ## Operation
