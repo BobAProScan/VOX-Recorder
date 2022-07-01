@@ -9,23 +9,19 @@ The recorded audio is converted to MP3 then ID3v2 metadata is inserted then fina
 ![Screenshot](vox_recorder.png)
 
 ## System Requirements
-Operating System - Windows 7 SP1 and above. VOX Recorder targets the Microsoft .NET Framework 4.8<br>
-Audio input device - Sound card or USB audio adapter<br>
-Internet Connection<br>
+- Operating System - Windows 7 SP1 and above. VOX Recorder targets the Microsoft .NET Framework 4.8
+- Audio input device - Sound card or USB audio adapter
+- Internet Connection
 
 ## Getting Started
-Apply for an API Key and System ID - Submit an application here: https://www.broadcastify.com/apply/calls<br>
+- Apply for an API Key and System ID - Submit an application here: https://www.broadcastify.com/apply/calls
+- Install VOX Recorder - Downloaded https://proscan.org/VOX_Recorder_0_5.zip then open the .zip file
+- Click the exe setup file and follow the prompts Choose a folder for the install
+- Audio Setup
+- Configuring VOX Recorder
+- Start the Recorder
 
-Install VOX Recorder - Downloaded https://proscan.org/VOX_Recorder_0_5.zip then open the .zip file<br>
-
-Click the exe setup file and follow the prompts Choose a folder for the install<br>
-
-
-Audio Setup
-Configuring VOX Recorder
-Start the Recorder
-
-Notes
+Note:
 There is never a need to uninstall VOX Recorder if another version of VOX Recorder is installed prior to installing the new version.  The existing configuration and logging files will be retained after installation provided the new version is installed in the same folder.
 
 ## Audio Setup
