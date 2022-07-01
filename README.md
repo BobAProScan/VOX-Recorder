@@ -44,13 +44,13 @@ The audio format sent to the Broadcastify Calls platform and the recordings save
 
 ## Configuring VOX Recorder
 
-API Key - Assigned by the Broadcastify Calls administrator.<br>
-System ID - Assigned by the Broadcastify Calls administrator.<br>
-System Name - This box is read only and is linked to the API Key and System ID.<br>
-Slot ID - Set to 1 when running a single instance of VOX Recorder. If running multiple instances using the same System ID and API Key then each conventional frequency is assigned a Slot ID starting with 1.<br>
-Conv. Frequency - Input the frequency that the receiver is tuned to. It needs to be part of the same system.<br>
+- API Key - Assigned by the Broadcastify Calls administrator.<br>
+- System ID - Assigned by the Broadcastify Calls administrator.
+- System Name - This box is read only and is linked to the API Key and System ID.
+- Slot ID - Set to 1 when running a single instance of VOX Recorder. If running multiple instances using the same System ID and API Key then each conventional frequency is assigned a Slot ID starting with 1.
+- Conv. Frequency - Input the frequency that the receiver is tuned to. It needs to be part of the same system.
 
-The checkboxes options should be self-explanatory<br>
+The checkboxes options should be self-explanatory
 
 ## Operation
 After the audio has been setup and good audio levels and the VOX Threshold is set then click the "Start Recorder" button. 
@@ -83,7 +83,7 @@ At 10 minute intervals, TimeSync will retrieve the actual time from a time serve
 
 ## Frequently Asked Questions
 
-Q: Can I run multiple copies of VOX Recorder on one computer?<br>
+<b>Q: Can I run multiple copies of VOX Recorder on one computer</b>
 A: Yes.  Many instances of VOX Recorder can run on the same computer.  1) Copy the contents of an existing folder to a new folder.  2) Run VOX Recorder in the new folder then change the options specific to that instance.<br>
 
 Q: How can I stream multiple receivers at the same time?<br>
