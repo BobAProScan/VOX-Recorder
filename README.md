@@ -4,7 +4,7 @@ The recorder starts when the audio level goes above the VOX Threshold. The recor
 
 The recorded audio is converted to MP3 then ID3v2 metadata is inserted then finally sent to the Broadcastify Calls platform. The recordings are also saved to the hard drive if optioned.
 
-![Screenshot](images/voxcall_screenshot.png)
+![Screenshot](vox_recorder.png)
 
 ## Operation
 - Connect a single-channel radio receiver to the sound card input on the computer.  If audio will be uploaded to Broadcastify Calls, the receiver should not be scanning multiple frequencies.
@@ -27,18 +27,6 @@ The recorded audio is converted to MP3 then ID3v2 metadata is inserted then fina
 - Something not working?  Check the log.txt file for errors and create an Issue here if needed.
 
 ## Windows Setup File
-[ZIP Download](https://radioetcetera.site/radioetcetera/files/voxcall.zip)
-- Uncompress the downloaded ZIP file
-- Run the EXE
-
-## Raspberry Pi executable binary (compiled for Raspbian Buster)
-[TGZ Download](https://radioetcetera.site/radioetcetera/files/voxcall.tgz)
-- Use a cheap USB sound card as the audio input - the Pi does not come with an audio input
-- Download using link above or via `curl -O https://radioetcetera.site/radioetcetera/files/voxcall.tgz`
-- `tar zxf voxcall.tgz` to uncompress
-- Install pulseaudio:
-  - `sudo apt-get install pulseaudio`
-- If ffmpeg isn't already installed, install it:
-  - `sudo apt-get install ffmpeg`
-- To run:
-  - `/home/pi/voxcall/voxcall`
+[ZIP Download](https://proscan.org/VOX_Recorder_0_5.zip)
+- Downloaded and unzip the zip file
+- Run the exe file
