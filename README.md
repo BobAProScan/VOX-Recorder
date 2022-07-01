@@ -7,7 +7,7 @@ The recorded audio is converted to MP3 then ID3v2 metadata is inserted then fina
 ![Screenshot](vox_recorder.png)
 
 ## Operation
-
+==System Requirements==
 <!--
 ## Operation
 - Connect a single-channel radio receiver to the sound card input on the computer.  If audio will be uploaded to Broadcastify Calls, the receiver should not be scanning multiple frequencies.
