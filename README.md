@@ -1,5 +1,6 @@
 # VOX Recorder
-Under Construction<br>
+Under Construction
+
 VOX Recorder is an application specifically designed for the Broadcastify Calls platform. Connect a receiver tuned to a specific conventional frequency.
 The recorder starts when the audio level goes above the VOX Threshold. The recorder stops when the audio goes back below the VOX threshold (after 2 seconds of no audio).
 
