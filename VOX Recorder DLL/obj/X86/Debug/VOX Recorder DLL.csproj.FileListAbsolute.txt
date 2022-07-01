@@ -1,0 +1,6 @@
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder DLL\obj\X86\Debug\VOX Recorder DLL.csproj.AssemblyReference.cache
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder DLL\obj\X86\Debug\VOXRecorder.Properties.Resources.resources
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder DLL\obj\X86\Debug\VOX Recorder DLL.csproj.GenerateResource.cache
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder DLL\obj\X86\Debug\VOX Recorder DLL.csproj.CoreCompileInputs.cache
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder DLL\bin\VOXRecorder.dll
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder DLL\obj\X86\Debug\VOXRecorder.dll
