@@ -14,7 +14,7 @@ The recorded audio is converted to MP3 then ID3v2 metadata is inserted then fina
 - Internet Connection
 
 ## Getting Started
-- Apply for an API Key and System ID - Submit an application here: https://www.broadcastify.com/apply/calls
+- Apply for an API Key and System ID - Submit an application here: [Calls Ingest Application Process](https://www.broadcastify.com/apply/calls)
 - Install VOX Recorder
   - Download https://proscan.org/VOX_Recorder_0_5.zip
   - Open the .zip file
