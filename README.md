@@ -83,16 +83,16 @@ At 10 minute intervals, TimeSync will retrieve the actual time from a time serve
 
 ## Frequently Asked Questions
 
-<b>Q: Can I run multiple copies of VOX Recorder on one computer</b>
+Q: <b>Can I run multiple copies of VOX Recorder on one computer?</b><br>
 A: Yes.  Many instances of VOX Recorder can run on the same computer.  1) Copy the contents of an existing folder to a new folder.  2) Run VOX Recorder in the new folder then change the options specific to that instance.<br>
 
-Q: How can I stream multiple receivers at the same time?<br>
+Q: <b>How can I stream multiple receivers at the same time?</b><br>
 A: By running multiple instances of VOX Recorder.<br>
 
-Q: How can VOX Recorder automatically start sending calls after the computer reboots?<br>
+Q: <b>How can VOX Recorder automatically start sending calls after the computer reboots?</b><br>
 A: Add a VOX Recorder shortcut to the Windows Startup folder.  Ensure the option 'Start Recorder When Program Loads' is checked.<br>
 
-Q: Should I run VOX Recorder as administrator?<br>
+Q: <b>Should I run VOX Recorder as administrator?</b><br>
 A: It's recommended that VOX Recorder is not elevated to administrator.<br>
 
 <!--
