@@ -19,14 +19,15 @@ The recorded audio is converted to MP3 then ID3v2 metadata is inserted then fina
   - Download https://proscan.org/VOX_Recorder_0_5.zip
   - Open the .zip file
   - Click the exe setup file and follow the prompts
-- [Audio Setup](#Audio Setup)
+- [Titles](#Audio Setup)
+- [Audio Setup](## Audio Setup)
 - Configuring VOX Recorder
 - Start the Recorder
 
 Note:
 There is never a need to uninstall VOX Recorder if another version of VOX Recorder is installed prior to installing the new version.  The existing configuration and logging files will be retained after installation provided the new version is installed in the same folder.
 
-## Audio Setup
+# Audio Setup
 For reference, see the article: https://wiki.radioreference.com/index.php/Connecting_Radios_to_Soundcards
 
 Use an audio cable with 1/8inch (3.5mm) stereo plugs. Connect the audio cable from the receiver audio output jack to the computer's audio input jack.
