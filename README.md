@@ -1,5 +1,4 @@
 # VOX Recorder
-Under Construction
 
 VOX Recorder is an application specifically designed for the [Broadcastify Calls](https://www.broadcastify.com/calls/) platform. Connect a receiver tuned to a specific conventional frequency.
 The recorder starts when the audio level goes above the VOX Threshold. The recorder stops when the audio goes back below the VOX threshold (after 2 seconds of no audio).
@@ -46,13 +45,13 @@ The audio format sent to the Broadcastify Calls platform and the recordings save
 
 ## Configuring VOX Recorder
 
-- API Key - Assigned by the Broadcastify Calls administrator.<br>
+- API Key - Assigned by the Broadcastify Calls administrator.
 - System ID - Assigned by the Broadcastify Calls administrator.
 - System Name - This box is read only and is linked to the API Key and System ID.
 - Slot ID - Set to 1 when running a single instance of VOX Recorder. If running multiple instances using the same System ID and API Key then each conventional frequency is assigned a Slot ID starting with 1.
 - Conv. Frequency - Input the frequency that the receiver is tuned to. It needs to be part of the same system.
 
-The checkboxes options should be self-explanatory
+The checkboxes options should be self-explanatory.
 
 ## Operation
 After the audio has been setup and good audio levels and the VOX Threshold is set then click the "Start Recorder" button. 
@@ -75,7 +74,6 @@ The following ID3 tags are used
         TYER - Year Created (year)
         COMM - Date & Time, System, Conv. Frequency (Comment)
 ```
-
 ## Logging
 The Logging tab grid will show all errors, e.g., duplicate calls, no API key specified, 2 minute timeout, etc. The logging grid clears when the app starts. To see the last 1000 errors, click the "View Text Log" button.
 
