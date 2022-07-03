@@ -66,7 +66,7 @@ VOX Recorder will send a keep-alive poll at 10 minute intervals to prevent the B
 If the "Save Recordings" box is checked then the recordings are saved to the "Recordings" folder under the folder containing VOX Recorder.
 The recordings are named using the Epoch time format.
 ID3v2 Metadata is inserted in the MP3 file. Any Media Player that supports reading ID3v2 tags should show the metadata.
-`
+```
 The following ID3 tags are used
         TPE1 - Conv. Frequency (Artist)
         TCON - Receiver Audio (Genre)
@@ -74,7 +74,7 @@ The following ID3 tags are used
         TCOM - VOX Recorder & Version (Composer)
         TYER - Year Created (year)
         COMM - Date & Time, System, Conv. Frequency (Comment)
-`
+```
 
 ## Logging
 The Logging tab grid will show all errors, e.g., duplicate calls, no API key specified, 2 minute timeout, etc. The logging grid clears when the app starts. To see the last 1000 errors, click the "View Text Log" button.
