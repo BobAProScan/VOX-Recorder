@@ -19,7 +19,7 @@ The recorded audio is converted to MP3 then ID3v2 metadata is inserted then fina
   - Download https://proscan.org/VOX_Recorder_0_5.zip
   - Open the .zip file
   - Click the exe setup file and follow the prompts
-- Audio Setup
+- [Audio Setup](#Audio Setup)
 - Configuring VOX Recorder
 - Start the Recorder
 
