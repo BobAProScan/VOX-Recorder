@@ -19,15 +19,14 @@ The recorded audio is converted to MP3 then ID3v2 metadata is inserted then fina
   - Download https://proscan.org/VOX_Recorder_0_5.zip
   - Open the .zip file
   - Click the exe setup file and follow the prompts
-- [Titles](#Audio Setup)
-- [Audio Setup](## Audio Setup)
-- Configuring VOX Recorder
+- [Audio Setup](#audio-setup)
+- [Configuring VOX Recorder](#configuring-vox-recorder)
 - Start the Recorder
 
 Note:
 There is never a need to uninstall VOX Recorder if another version of VOX Recorder is installed prior to installing the new version.  The existing configuration and logging files will be retained after installation provided the new version is installed in the same folder.
 
-# Audio Setup
+## Audio Setup
 For reference, see the article: https://wiki.radioreference.com/index.php/Connecting_Radios_to_Soundcards
 
 Use an audio cable with 1/8inch (3.5mm) stereo plugs. Connect the audio cable from the receiver audio output jack to the computer's audio input jack.
@@ -59,7 +58,7 @@ The checkboxes options should be self-explanatory
 After the audio has been setup and good audio levels and the VOX Threshold is set then click the "Start Recorder" button. 
 The recording will upload after the audio goes back below the VOX threshold after a 2 second delay to ensure that the conversation has ended. The last 2 seconds of audio will delete as that is dead air.
 
-If continuous audio is detected for 2 minutes due to noise, open mic, etc. then the recording will stop and not upload.
+If continuous audio is detected for 2 minutes due to interference, open mic, etc. then the recording will stop and not upload.
 
 VOX Recorder will send a keep-alive poll at 10 minute intervals to prevent the Broadcastify Calls platform from showing your feed offline.
 
@@ -82,8 +81,6 @@ The Logging tab grid will show all errors, e.g., duplicate calls, no API key spe
 ## Time Sync
 At 10 minute intervals, TimeSync will retrieve the actual time from a time server and compare it with the computer time. The result is an offset variable that is used to calculate the recording's actual start time. 
 
-## What's New
-
 ## Frequently Asked Questions
 
 Q: <b>Can I run multiple copies of VOX Recorder on one computer?</b><br>
@@ -97,48 +94,3 @@ A: Add a VOX Recorder shortcut to the Windows Startup folder.  Ensure the option
 
 Q: <b>Should I run VOX Recorder as administrator?</b><br>
 A: It's recommended that VOX Recorder is not elevated to administrator.<br>
-
-<!--
-# voxcall
-A sound-activated audio recorder with support for uploading audio to [Broadcastify Calls](https://www.broadcastify.com/calls/) and to [rdio-scanner](https://github.com/chuot/rdio-scanner).  For Windows and Raspberry Pi.
-
-![Screenshot](images/voxcall_screenshot.png)
-
-## Operation
-- Connect a single-channel radio receiver to the sound card input on the computer.  If audio will be uploaded to Broadcastify Calls, the receiver should not be scanning multiple frequencies.
-- Set the Audio Squelch using the slider.  Audio above the level of the slider will trigger recording.  The current audio level is shown adjacent to the slider.  Set the level of the slider while testing with the radio squelched and unsquelched.  
-- To upload recorded audio files to Broadcastify Calls, enter information received from Broadcastify support
-  - API key goes in the API key field
-  - SID goes in the System ID field
-  - Slot goes in the Slod ID filed (default to 1 if no Slot ID is provided)
-- To upload recorded audio files to rdio-scanner, enter information for the desired rdio-scanner instance
-  - URL of the rdio-scanner api (for example:  192.168.1.138:3000/api/call-upload
-  - rdio-scanner API key (create using the rdio-scanner admin interface)
-  - System ID
-  - Talkgroup ID
-- When audio is detected above the Audio Squelch level, audio will be recorded until two seconds of silence is detected.  Once the recording ends, an MP3 file will be created.  
-  - If valid Broadcastify Calls credentials are entered, the MP3 file will be uploaded to that system.  
-  - If valid rdio-scanner credentials are entered, the MP3 file will be uploaded to that system.
-  - If the "Save Audio Files" option is selected, the recordings will be saved to the /audiosave subdirectory.   Otherwise, the MP3 will be deleted.  The filename will be the UNIX timestamp of when the recording was started. 
-- There is a two-minute timeout timer.  If a recording exceeds two minutes (stuck squelch, noise, etc.) recording will stop, an error will be displayed, and no further activity will take place until the input audio goes below the Audio Squelch threshold, at which time normal operation will resume.
-- Multiple instances can be run at the same time to capture audio from multiple recievers.  Create a different directory for each instance.  Each directory must have a config.cfg file.  On Windows, each directory should also have a copy of ffmpeg.exe or ffmpeg.exe must be added to the system path.  
-- Something not working?  Check the log.txt file for errors and create an Issue here if needed.
-
-## Windows EXE
-[ZIP Download](https://radioetcetera.site/radioetcetera/files/voxcall.zip)
-- Uncompress the downloaded ZIP file
-- Run the EXE
-
-## Raspberry Pi executable binary (compiled for Raspbian Buster)
-[TGZ Download](https://radioetcetera.site/radioetcetera/files/voxcall.tgz)
-- Use a cheap USB sound card as the audio input - the Pi does not come with an audio input
-- Download using link above or via `curl -O https://radioetcetera.site/radioetcetera/files/voxcall.tgz`
-- `tar zxf voxcall.tgz` to uncompress
-- Install pulseaudio:
-  - `sudo apt-get install pulseaudio`
-- If ffmpeg isn't already installed, install it:
-  - `sudo apt-get install ffmpeg`
-- To run:
-  - `/home/pi/voxcall/voxcall`
-
--->
