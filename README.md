@@ -17,7 +17,7 @@ The recorded audio is converted to MP3 then ID3v2 metadata is inserted then fina
 - Install VOX Recorder
   - Download [Version 0.5.0 Setup File](https://github.com/BobAProScan/VOX-Recorder/releases/download/v0.5.0/VOX_Recorder_0_5_0_Setup.zip)
   - Open the .zip file
-  - Click the exe setup file and follow the prompts
+  - Click the exe file and follow the prompts
 - [Audio Setup](#audio-setup)
 - [Configuring VOX Recorder](#configuring-vox-recorder)
 - Start the Recorder
@@ -78,7 +78,7 @@ The following ID3 tags are used
 The Logging tab grid will show all errors, e.g., duplicate calls, no API key specified, 2 minute timeout, etc. The logging grid clears when the app starts. To see the last 1000 errors, click the "View Text Log" button.
 
 ## Time Sync
-At 10 minute intervals, TimeSync will retrieve the actual time from a time server and compare it with the computer time. The result is an offset variable that is used to calculate the recording's actual start time. 
+At 10 minute intervals, Time Sync will retrieve the actual time from a time server and compare it with the computer time. The result is an offset variable that is used to calculate the recording's actual start time. 
 
 ## Frequently Asked Questions
 
