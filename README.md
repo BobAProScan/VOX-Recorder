@@ -15,7 +15,7 @@ The recorded audio is converted to MP3 then ID3v2 metadata is inserted then fina
 ## Getting Started
 - Apply for an API Key and System ID - Submit an application here: [Calls Ingest Application Process](https://www.broadcastify.com/apply/calls)
 - Install VOX Recorder
-  - Download [Version 0.5.0 Setup File](https://github.com/BobAProScan/VOX-Recorder/releases/download/v0.5.0/VOX_Recorder_0_5_0_Setup.zip)
+  - Download [Version 1.0 Setup File](https://github.com/BobAProScan/VOX-Recorder/releases/download/v1.0/VOX_Recorder_1_0.zip)
   - Open the .zip file
   - Click the exe file and follow the prompts
 - [Audio Setup](#audio-setup)
