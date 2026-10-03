@@ -19,4 +19,4 @@ Imports System.Runtime.InteropServices
 '      Build Number
 '      Revision
 '
-<Assembly: AssemblyVersion("1.0")>
+<Assembly: AssemblyVersion("1.1")>

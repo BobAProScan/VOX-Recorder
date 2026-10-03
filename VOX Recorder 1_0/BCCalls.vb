@@ -25,9 +25,11 @@
         SlotID = fMain.TP1_TextBox4.Text
         ConvFreq = fMain.TP1_TextBox5.Text
         StartMP3Encoder()
-        KeepAlivePollTimer = New System.Timers.Timer(1000 * 60 * 10) 'Poll interval 10 minutes
-        AddHandler KeepAlivePollTimer.Elapsed, AddressOf KeepAlivePollTimerEvent
-        KeepAlivePollTimer.Start()
+        If fMain.BroadcastifyMode.Checked Then
+            KeepAlivePollTimer = New System.Timers.Timer(1000 * 60 * 10) 'Poll interval 10 minutes
+            AddHandler KeepAlivePollTimer.Elapsed, AddressOf KeepAlivePollTimerEvent
+            KeepAlivePollTimer.Start()
+        End If
         CallsRunning = True
         RaiseEvent UpdateGUI(4, New String() {"BC", "Feed started"}) 'Logging
 
@@ -240,20 +242,58 @@
 
         Static WorkerQueue As Queue(Of QueueItem(Of Integer)) = New Queue(Of QueueItem(Of Integer))()
         MyQueuedBackgroundWorker.QueueWorkItem(WorkerQueue, Math.Min(System.Threading.Interlocked.Increment(WorkerId), WorkerId - 1),
-        Function(args)
-            Dim threadMessage As String = String.Format("Thread started at '{0}', Task Number={1}", DateTime.Now.ToString("HH:mm:ss.fff"), args.Argument)
-            Dim errorStr As String = HTTP.Send(ApiKey, SystemId, SlotID, Freq, Duration, Epoch, False, mp3Audio)
-            Return New With {Key .WorkerId = args.Argument, Key .Message = threadMessage, Key .ErrorStr = errorStr, Key .Audio = mp3Audio}
-        End Function, Sub(args)
-                          Dim completeMessage As String = String.Format("COMPLETED at '{0}' for Task Number={1}, Message={2}, " & vbCrLf & "ERROR={3}", DateTime.Now.ToString("HH:mm:ss.fff"), args.Result.WorkerId, args.Result.Message, args.Result.ErrorStr)
-                          d(completeMessage)
-                          If String.IsNullOrEmpty(args.Result.ErrorStr) = False Then
-                              RaiseEvent UpdateGUI(4, New String() {"BC", "Failed upload - Error: " & args.Result.ErrorStr}) 'Logging
-                          End If
-                          If fMain.TP1_CheckBox4.Checked Then
-                              PlayMP3_NAudio.Play(mp3Audio)
-                          End If
-                      End Sub)
+    Function(args)
+        Dim threadMessage As String = String.Format("Thread started at '{0}', Task Number={1}", DateTime.Now.ToString("HH:mm:ss.fff"), args.Argument)
+
+        Dim errorStr As String = String.Empty
+        Dim rdioStr As String = "Skipped"
+
+        If fMain.BroadcastifyMode.Checked Then
+            errorStr = HTTP.Send(ApiKey, SystemId, SlotID, Freq, Duration, Epoch, False, mp3Audio)
+        Else
+            errorStr = "Skipped"
+        End If
+
+        If fMain.RdioMode.Checked Then
+            rdioStr = HTTP.SendToRdio(Freq, Duration, Epoch, mp3Audio)
+        Else
+            rdioStr = "Skipped"
+        End If
+
+        Return New With {
+            Key .WorkerId = args.Argument,
+            Key .Message = threadMessage,
+            Key .ErrorStr = errorStr,
+            Key .RdioStr = rdioStr,
+            Key .Audio = mp3Audio
+        }
+    End Function,
+    Sub(args)
+        Dim completeMessage As String = String.Format("COMPLETED at '{0}' for Task Number={1}, Message={2}, " & vbCrLf &
+                                                      "Broadcastify Result={3}" & vbCrLf &
+                                                      "Rdio Result={4}",
+                                                      DateTime.Now.ToString("HH:mm:ss.fff"),
+                                                      args.Result.WorkerId,
+                                                      args.Result.Message,
+                                                      args.Result.ErrorStr,
+                                                      args.Result.RdioStr)
+        d(completeMessage)
+
+        If Not args.Result.ErrorStr.ToLower().Contains("skipped") AndAlso
+           String.IsNullOrEmpty(args.Result.ErrorStr) = False Then
+            RaiseEvent UpdateGUI(4, New String() {"BC", "Failed Broadcastify upload - Error: " & args.Result.ErrorStr})
+        End If
+
+        If Not args.Result.RdioStr.ToLower().Contains("success") AndAlso
+           Not args.Result.RdioStr.ToLower().Contains("skipped") AndAlso
+           String.IsNullOrEmpty(args.Result.RdioStr) = False Then
+            RaiseEvent UpdateGUI(4, New String() {"BC", "Rdio Upload Error: " & args.Result.RdioStr})
+        End If
+
+        If fMain.TP1_CheckBox4.Checked Then
+            PlayMP3_NAudio.Play(args.Result.Audio)
+        End If
+    End Sub)
 
     End Sub
 
@@ -294,10 +334,12 @@
                 If MemoryStream IsNot Nothing Then
                     MemoryStream.Dispose()
                 End If
-                KeepAlivePollTimer.Close()
-                RemoveHandler KeepAlivePollTimer.Elapsed, AddressOf KeepAlivePollTimerEvent
-                KeepAlivePollTimer.Dispose()
-                KeepAlivePollTimer = Nothing
+                If KeepAlivePollTimer IsNot Nothing Then
+                    KeepAlivePollTimer.Close()
+                    RemoveHandler KeepAlivePollTimer.Elapsed, AddressOf KeepAlivePollTimerEvent
+                    KeepAlivePollTimer.Dispose()
+                    KeepAlivePollTimer = Nothing
+                End If
                 RaiseEvent UpdateGUI(4, New String() {"BC", "Feed stopped"}) 'Logging
             End If
             'free shared unmanaged resources

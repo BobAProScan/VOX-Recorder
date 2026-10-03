@@ -128,6 +128,18 @@
                                     If IsNumeric(str1) = True Then TestToneLevel = CInt(str1)
                                 Case "TEST TONE FREQUENCY"
                                     If IsNumeric(str1) = True Then TestToneFrequency = CInt(str1)
+                                Case "RDIO URL"
+                                    If str1 <> String.Empty Then .RDIO_Url.Text = str1
+                                Case "RDIO API KEY"
+                                    If str1 <> String.Empty Then .RDIO_ApiKey.Text = str1
+                                Case "RDIO SYSTEM ID"
+                                    If str1 <> String.Empty Then .RDIO_SystemID.Text = str1
+                                Case "RDIO TALKGROUP ID"
+                                    If str1 <> String.Empty Then .RDIO_TalkgroupID.Text = str1
+                                Case "RDIO MODE"
+                                    If str1 = "1" Then .RdioMode.Checked = True Else .RdioMode.Checked = False
+                                Case "BROADCASTIFY MODE"
+                                    If str1 = "1" Then .BroadcastifyMode.Checked = True Else .BroadcastifyMode.Checked = False
                             End Select
                         End If
                     Next
@@ -205,6 +217,21 @@
                 End If
                 sb.AppendLine("[TEST TONE LEVEL]=" & TestToneLevel)
                 sb.AppendLine("[TEST TONE FREQUENCY]=" & TestToneFrequency)
+
+                sb.AppendLine("[RDIO URL]=" & .RDIO_Url.Text)
+                sb.AppendLine("[RDIO API KEY]=" & .RDIO_ApiKey.Text)
+                sb.AppendLine("[RDIO SYSTEM ID]=" & .RDIO_SystemID.Text)
+                sb.AppendLine("[RDIO TALKGROUP ID]=" & .RDIO_TalkgroupID.Text)
+                If .RdioMode.Checked = True Then
+                    sb.AppendLine("[RDIO MODE]=" & 1)
+                Else
+                    sb.AppendLine("[RDIO MODE]=" & 0)
+                End If
+                If .BroadcastifyMode.Checked = True Then
+                    sb.AppendLine("[BROADCASTIFY MODE]=" & 1)
+                Else
+                    sb.AppendLine("[BROADCASTIFY MODE]=" & 0)
+                End If
             End With
 
             File.WriteAllText(Application.ExecutablePath.Replace("exe", "cfg"), sb.ToString)

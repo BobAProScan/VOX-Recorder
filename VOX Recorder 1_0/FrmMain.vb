@@ -96,17 +96,24 @@ Public Class FrmMain
     End Sub
 
     Public Sub TP1_Button3_Click(sender As Object, e As EventArgs) Handles TP1_Button3.Click
-
+        If BroadcastifyMode.Checked = False AndAlso RdioMode.Checked = False Then
+            Using New CenteredMessageBox(Me)
+                MessageBox.Show(Me, "Select either Broadcastify or Rdio", ProgramName)
+            End Using
+            Return
+        End If
         If TP1_Button3.Text = "Start Recorder" Then
             If CheckFields() = False Then Return
-            Dim errorStr As String = HTTP.Send(TP1_TextBox1.Text, TP1_TextBox2.Text, String.Empty, String.Empty, String.Empty, String.Empty, True, Nothing)
-            errorStr = errorStr.Replace("OK", String.Empty)
-            If errorStr <> String.Empty Then
-                WriteLogs("Connection failed - Error: " & errorStr)
-                Using New CenteredMessageBox(Me)
-                    MessageBox.Show(Me, "Connection failed - Error: " & errorStr, ProgramName)
-                End Using
-                Return
+            If BroadcastifyMode.Checked Then
+                Dim errorStr As String = HTTP.Send(TP1_TextBox1.Text, TP1_TextBox2.Text, String.Empty, String.Empty, String.Empty, String.Empty, True, Nothing)
+                errorStr = errorStr.Replace("OK", String.Empty)
+                If errorStr <> String.Empty Then
+                    WriteLogs("Connection failed - Error: " & errorStr)
+                    Using New CenteredMessageBox(Me)
+                        MessageBox.Show(Me, "Connection failed - Error: " & errorStr, ProgramName)
+                    End Using
+                    Return
+                End If
             End If
             Me.Cursor = Cursors.WaitCursor
             Application.DoEvents()
@@ -426,38 +433,76 @@ Public Class FrmMain
     End Sub
     Private Function CheckFields() As Boolean
 
-        TP1_TextBox1.Text = TP1_TextBox1.Text.Trim
-        TP1_TextBox2.Text = TP1_TextBox2.Text.Trim
-        TP1_TextBox4.Text = TP1_TextBox4.Text.Trim
-        TP1_TextBox5.Text = TP1_TextBox5.Text.Trim
+        If BroadcastifyMode.Checked Then
+            TP1_TextBox1.Text = TP1_TextBox1.Text.Trim
+            TP1_TextBox2.Text = TP1_TextBox2.Text.Trim
+            TP1_TextBox4.Text = TP1_TextBox4.Text.Trim
+            TP1_TextBox5.Text = TP1_TextBox5.Text.Trim
 
-        If TP1_TextBox1.Text = String.Empty Then
-            Using New CenteredMessageBox(Me)
-                MessageBox.Show(Me, TP1_Label1.Text & " must Not be blank", ProgramName)
-            End Using
-            TP1_TextBox1.Focus()
-            Return False
+            If TP1_TextBox1.Text = String.Empty Then
+                Using New CenteredMessageBox(Me)
+                    MessageBox.Show(Me, TP1_Label1.Text & " must Not be blank", ProgramName)
+                End Using
+                TP1_TextBox1.Focus()
+                Return False
+            End If
+            If TP1_TextBox2.Text = String.Empty Then
+                Using New CenteredMessageBox(Me)
+                    MessageBox.Show(Me, TP1_Label2.Text & " must Not be blank", ProgramName)
+                End Using
+                TP1_TextBox2.Focus()
+                Return False
+            End If
+            If TP1_TextBox4.Text = String.Empty Then
+                Using New CenteredMessageBox(Me)
+                    MessageBox.Show(Me, TP1_Label6.Text & " must Not be blank", ProgramName)
+                End Using
+                TP1_TextBox4.Focus()
+                Return False
+            End If
+            If TP1_TextBox5.Text = String.Empty Then
+                Using New CenteredMessageBox(Me)
+                    MessageBox.Show(Me, TP1_Label7.Text & " must Not be blank", ProgramName)
+                End Using
+                TP1_TextBox5.Focus()
+                Return False
+            End If
         End If
-        If TP1_TextBox2.Text = String.Empty Then
-            Using New CenteredMessageBox(Me)
-                MessageBox.Show(Me, TP1_Label2.Text & " must Not be blank", ProgramName)
-            End Using
-            TP1_TextBox2.Focus()
-            Return False
-        End If
-        If TP1_TextBox4.Text = String.Empty Then
-            Using New CenteredMessageBox(Me)
-                MessageBox.Show(Me, TP1_Label6.Text & " must Not be blank", ProgramName)
-            End Using
-            TP1_TextBox4.Focus()
-            Return False
-        End If
-        If TP1_TextBox5.Text = String.Empty Then
-            Using New CenteredMessageBox(Me)
-                MessageBox.Show(Me, TP1_Label7.Text & " must Not be blank", ProgramName)
-            End Using
-            TP1_TextBox5.Focus()
-            Return False
+
+        If RdioMode.Checked Then
+            RDIO_Url.Text = RDIO_Url.Text.Trim
+            RDIO_ApiKey.Text = RDIO_ApiKey.Text.Trim
+            RDIO_SystemID.Text = RDIO_SystemID.Text.Trim
+            RDIO_TalkgroupID.Text = RDIO_TalkgroupID.Text.Trim
+
+            If RDIO_Url.Text = String.Empty Then
+                Using New CenteredMessageBox(Me)
+                    MessageBox.Show(Me, "Rdio URL must Not be blank", ProgramName)
+                End Using
+                RDIO_Url.Focus()
+                Return False
+            End If
+            If RDIO_ApiKey.Text = String.Empty Then
+                Using New CenteredMessageBox(Me)
+                    MessageBox.Show(Me, "Rdio API Key must Not be blank", ProgramName)
+                End Using
+                RDIO_ApiKey.Focus()
+                Return False
+            End If
+            If RDIO_SystemID.Text = String.Empty Then
+                Using New CenteredMessageBox(Me)
+                    MessageBox.Show(Me, "Rdio System ID must Not be blank", ProgramName)
+                End Using
+                RDIO_SystemID.Focus()
+                Return False
+            End If
+            If RDIO_TalkgroupID.Text = String.Empty Then
+                Using New CenteredMessageBox(Me)
+                    MessageBox.Show(Me, "Rdio Talkgroup ID must Not be blank", ProgramName)
+                End Using
+                RDIO_TalkgroupID.Focus()
+                Return False
+            End If
         End If
 
         Return True
