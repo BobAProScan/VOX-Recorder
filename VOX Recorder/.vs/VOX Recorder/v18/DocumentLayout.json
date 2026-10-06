@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bob\\Documents\\Visual Studio\\Projects\\VOX Recorder\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1C57C36D-53E2-4AD5-B23E-ED3CC3FFEC8C}|VOX Recorder.vbproj|C:\\Users\\Bob\\Documents\\Visual Studio\\Projects\\VOX Recorder\\frmmain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1C57C36D-53E2-4AD5-B23E-ED3CC3FFEC8C}|VOX Recorder.vbproj|solutionrelative:frmmain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C57C36D-53E2-4AD5-B23E-ED3CC3FFEC8C}|VOX Recorder.vbproj|C:\\Users\\Bob\\Documents\\Visual Studio\\Projects\\VOX Recorder\\mp3framedetector.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1C57C36D-53E2-4AD5-B23E-ED3CC3FFEC8C}|VOX Recorder.vbproj|solutionrelative:mp3framedetector.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C57C36D-53E2-4AD5-B23E-ED3CC3FFEC8C}|VOX Recorder.vbproj|C:\\Users\\Bob\\Documents\\Visual Studio\\Projects\\VOX Recorder\\bccalls.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1C57C36D-53E2-4AD5-B23E-ED3CC3FFEC8C}|VOX Recorder.vbproj|solutionrelative:bccalls.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C57C36D-53E2-4AD5-B23E-ED3CC3FFEC8C}|VOX Recorder.vbproj|C:\\Users\\Bob\\Documents\\Visual Studio\\Projects\\VOX Recorder\\main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1C57C36D-53E2-4AD5-B23E-ED3CC3FFEC8C}|VOX Recorder.vbproj|solutionrelative:main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmMain.vb",
+              "DocumentMoniker": "C:\\Users\\Bob\\Documents\\Visual Studio\\Projects\\VOX Recorder\\FrmMain.vb",
+              "RelativeDocumentMoniker": "FrmMain.vb",
+              "ToolTip": "C:\\Users\\Bob\\Documents\\Visual Studio\\Projects\\VOX Recorder\\FrmMain.vb",
+              "RelativeToolTip": "FrmMain.vb",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-03T13:20:41.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BCCalls.vb",
+              "DocumentMoniker": "C:\\Users\\Bob\\Documents\\Visual Studio\\Projects\\VOX Recorder\\BCCalls.vb",
+              "RelativeDocumentMoniker": "BCCalls.vb",
+              "ToolTip": "C:\\Users\\Bob\\Documents\\Visual Studio\\Projects\\VOX Recorder\\BCCalls.vb",
+              "RelativeToolTip": "BCCalls.vb",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAMwEoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-03T13:21:26.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Mp3FrameDetector.vb",
+              "DocumentMoniker": "C:\\Users\\Bob\\Documents\\Visual Studio\\Projects\\VOX Recorder\\Mp3FrameDetector.vb",
+              "RelativeDocumentMoniker": "Mp3FrameDetector.vb",
+              "ToolTip": "C:\\Users\\Bob\\Documents\\Visual Studio\\Projects\\VOX Recorder\\Mp3FrameDetector.vb",
+              "RelativeToolTip": "Mp3FrameDetector.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-03T15:38:17.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Main.vb",
+              "DocumentMoniker": "C:\\Users\\Bob\\Documents\\Visual Studio\\Projects\\VOX Recorder\\Main.vb",
+              "RelativeDocumentMoniker": "Main.vb",
+              "ToolTip": "C:\\Users\\Bob\\Documents\\Visual Studio\\Projects\\VOX Recorder\\Main.vb",
+              "RelativeToolTip": "Main.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-10-03T04:27:25.054Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

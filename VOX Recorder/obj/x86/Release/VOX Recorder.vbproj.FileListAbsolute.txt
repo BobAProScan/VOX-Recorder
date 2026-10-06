@@ -1,0 +1,44 @@
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder\bin\VOX Recorder.exe.config
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder\bin\VOX Recorder.exe
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder\bin\VOXRecorder.dll
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\VOX Recorder.vbproj.AssemblyReference.cache
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\AudioMeterVert.resources
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\Buttons.resources
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\FrmCheckNewestVersion.resources
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\FrmMain.resources
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\Resources.resources
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\TimeSync.resources
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\TrackBarVerticle.resources
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\VOX Recorder.vbproj.GenerateResource.cache
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\VOX Recorder.vbproj.CoreCompileInputs.cache
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\VOX Recorder.vbproj.CopyComplete
+C:\Users\bob\OneDrive\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\VOX Recorder.exe
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder_1_1\VOX Recorder 1_0\bin\VOX Recorder.exe.config
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder_1_1\VOX Recorder 1_0\bin\VOX Recorder.exe
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder_1_1\VOX Recorder 1_0\obj\x86\Release\VOX Recorder.vbproj.AssemblyReference.cache
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder_1_1\VOX Recorder 1_0\obj\x86\Release\AudioMeterVert.resources
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder_1_1\VOX Recorder 1_0\obj\x86\Release\Buttons.resources
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder_1_1\VOX Recorder 1_0\obj\x86\Release\FrmCheckNewestVersion.resources
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder_1_1\VOX Recorder 1_0\obj\x86\Release\FrmMain.resources
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder_1_1\VOX Recorder 1_0\obj\x86\Release\Resources.resources
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder_1_1\VOX Recorder 1_0\obj\x86\Release\TimeSync.resources
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder_1_1\VOX Recorder 1_0\obj\x86\Release\TrackBarVerticle.resources
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder_1_1\VOX Recorder 1_0\obj\x86\Release\VOX Recorder.vbproj.GenerateResource.cache
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder_1_1\VOX Recorder 1_0\obj\x86\Release\VOX Recorder.vbproj.CoreCompileInputs.cache
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder_1_1\VOX Recorder 1_0\obj\x86\Release\VOX Reco.FE56DAC4.Up2Date
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder_1_1\VOX Recorder 1_0\obj\x86\Release\VOX Recorder.exe
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder\bin\VOX Recorder.exe.config
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder\bin\VOX Recorder.exe
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder\bin\VOXRecorder.dll
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\VOX Recorder.vbproj.AssemblyReference.cache
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\AudioMeterVert.resources
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\Buttons.resources
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\FrmCheckNewestVersion.resources
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\FrmMain.resources
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\Resources.resources
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\TimeSync.resources
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\TrackBarVerticle.resources
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\VOX Recorder.vbproj.GenerateResource.cache
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\VOX Recorder.vbproj.CoreCompileInputs.cache
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\VOX Reco.FE56DAC4.Up2Date
+C:\Users\Bob\Documents\Visual Studio\Projects\VOX Recorder\obj\x86\Release\VOX Recorder.exe
